@@ -11,21 +11,15 @@
     </ul>
     <script>
       function add(){
-        // console.log("onclick works");
         var list = document.getElementById("list");
-        // console.log(list);
         var input = document.getElementById("input");
-        // console.log(input);
         var newEntry = document.createElement("li");
         var newDelete = document.createElement("button");
         newEntry.id = Math.random();
         newDelete.id = newEntry.id;
-        // console.log(newEntry);
         newEntry.appendChild(document.createTextNode(input.value));
         input.value = "";
         newDelete.appendChild(document.createTextNode("Delete"));
-        // console.log(newEntry);
-        // console.log(input);
         list.appendChild(newEntry);
         list.appendChild(newDelete);
         // get value
@@ -40,7 +34,6 @@
         // find list item
         // delete list item
         //
-        // document.getElementsByTagName(button).style.background = "lightblue";
       }
 
 
